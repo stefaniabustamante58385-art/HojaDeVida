@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>Mi hoja de vida </title>
+        <link rel="stylesheet"href="styles.css"> <!--Enlazado al archivo css (style.css)para dar estilos al HTML-->
+    </head>
+    <body><!--contiene todo el contenido visible de la pagina (texto,imagenes,etc) -->
+        <div class="container"> <!--un cpntenedor general para organizar el contenido. la clase container se usa en en css para dar estilos (como margenes o anchos) -->
+            <!--encabezado con nombre y foto-->
+            <header>  <!--seccion semantica para el encabezado de la pagina (logo,nombre,titulo) -->
+                <img src="imagenes/1img.jpg" alt="mi foto" class="profile-pic">
+                <h1> Stefania Bustamante Naranjo</h1>
+                <p> Desarroladora Web Junior</p>
+            </header> 
+
+            <!--Boton de imprimir-->
+            <div class="print-button-container">
+                <button onclick="window.print()"class="print-button">Imprimir  PDF</button>
+            </div>
+
+            <!-- Secciones principales-->
+             <section class="section">
+                <h2>Informacion Personal</h2>
+                <ul><!--crea una lista desordenada (con viñetas)-->
+
+                <li><strong> Email</strong>   stefaniabustamante014@gmail.com</li> 
+                <li><strong> Telefono</strong>   +57 324 243 56 41</li>
+                <li> <strong> Ubicacion</strong>  Aguadas,caldas,Colombia</li>
+                </ul>
+             </section>
+
+             <sectio class="section">
+                <h2> Educación</h2>
+                <div class="item"><!--un contenedor para agrupar elementos relacionados-->
+                    <h3> Institucion Educativa Roberto pelaez</h3>
+                    <p> Bachiller Técnico en Diseño Web / 2025</p>
+                </div>
+             </sectio>
+
+             <section class="section">
+                <h2> Experiencia Laboral</h2>
+                <div class="item">
+                    <h3> Practicante en el Hospital San Jose de Aguadas,Caldas</h3>
+                    <p> Diseño de interfaces con Figma</p>
+                </div>
+             </section>
+            
+             <section class="sectrion">
+                <h2> Habilidades</h2>
+                <ul class="skills"> <!--Lista desordenada con la clase skills para estilos personalizados (ej: mostrar habilidades)-->
+                     <li>HTML/CSS </li>
+                     <li>Figma </li>
+                     <li>JavaScript Basico </li>
+                    
+                </ul>
+             </section>
+        </div>
+ 
+
+    </body>
+</html>
